@@ -6,7 +6,7 @@ let error = document.querySelector('#error');
 
 async function callWeather (loc) {
 try {
-    const data = await fetch(`http://api.weatherapi.com/v1/current.json?key=17308ed70af341ec8db232458242903&q=${loc}`, {mode: 'cors'});
+    const data = await fetch(`https://api.weatherapi.com/v1/current.json?key=17308ed70af341ec8db232458242903&q=${loc}`, {mode: 'cors'});
     const xdata = await data.json();
     console.log(xdata);
     console.log(xdata.current.cloud);
