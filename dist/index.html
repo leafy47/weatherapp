@@ -7,6 +7,32 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container">
+        <h1>Weather Display</h1>
+        <div class="input-container">
+          <input type="text" id="location-input" placeholder="Enter location">
+          <button id="submit-btn">Submit</button>
+        </div>
+        <div class="output-container">
+          <div class="output-item">
+            <label>Location:</label>
+            <span id="location-output"></span>
+          </div>
+          <div class="output-item">
+            <label>Temperature:</label>
+            <span id="temperature-output"></span>
+          </div>
+          <div class="output-item">
+            <label>Current Weather:</label>
+            <span id="weather-output"></span>
+          </div>
+          <div class="output-item">
+            <label>Wind Speed:</label>
+            <span id="wind-output"></span>
+          </div>
+          <p id="error"></p>
+        </div>
+      </div>
     <script src="main.js"></script>
 </body>
 </html>
